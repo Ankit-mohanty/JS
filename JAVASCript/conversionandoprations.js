@@ -31,3 +31,7 @@ console.log(booleanLogein);
 let a = 25;
 let intToString = String(a);
 console.log(typeof intToString);
+
+let c=20;
+let makestring=String(c);
+console.log(typeof makestring);
