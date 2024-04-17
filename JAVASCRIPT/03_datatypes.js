@@ -2,11 +2,11 @@
 //alert(3+2);// we are using node.js not browser
 /*
 -> number=> 2 to power 53(The range of number)
-->bigint
-->string=>""
-->boolean=>true/false
-->null=> stand alone value
-->undefined 
+-> bigint
+-> string=>""
+-> boolean=>true/false
+-> null=> stand alone value
+-> undefined 
 -> symbol=> define somthing unique
 */
 let a = 12;

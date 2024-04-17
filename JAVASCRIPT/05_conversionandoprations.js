@@ -35,3 +35,8 @@ console.log(typeof intToString);
 let c=20;
 let makestring=String(c);
 console.log(typeof makestring);
+
+let ankit = 52;
+console.log("Ankit = " +typeof ankit);
+let convertitintoString= String(ankit);
+console.log( "Ankit =" + typeof convertitintoString);
