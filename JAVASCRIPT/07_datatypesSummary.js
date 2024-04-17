@@ -39,7 +39,7 @@ console.log(typeof bigNumber);
 // Non- premeytive Data type
 //Array
 const aaa = ["rahul", "ankit", "mohanty"];
-console.log(typeof aaa); 
+console.log(typeof aaa);
 console.log(aaa);
 //Object
 const myObj = {
@@ -55,3 +55,35 @@ const myFunction = function rahul() {
 console.log(myFunction);
 console.log(typeof myFunction);
 // note -: all the non premitive data type data type will come object. Only function type is return function/functionObject type except this all are object type. 
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* -> Threre  are two type of memory in JS.
+-> (1) Static Memory : It store only premetive data type.
+-> In stack memmory we get the copy of the varible.
+-> If we change the value  of that variable then it will not affect on static memory. Because it will chage in it's copy.
+-> So when ever we assign some value to that variable it will create new space for that varibale.
+
+-> (2) Heap Memory : It store all other non primitive data type.
+-> In heap memory wet the refarance of the original value,if we change somthing in it the origiinal value will be change.
+
+ */
+
+let padhi = " Rahul";
+let abhi = padhi;
+abhi = "Ashis";
+console.log(padhi); // Output : Rahul
+console.log(abhi);// ashis
+
+
+let am = {
+    email: "ankit@hfh",
+    name1: "nkjfnk"
+};
+let userTwo = am;
+userTwo.email = "rahul"
+
+// console.log(userTwo);
+console.log(am.email); // Output : rahul
+// Objects are reference types, so if you change any property of object then it reflect on original object also.
