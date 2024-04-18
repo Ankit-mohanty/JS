@@ -44,3 +44,17 @@ console.log(mm2.split('-'));// we use this function to conavert a string to arra
 console.log(mm2.charAt(1));
 
 console.log(mm2.localeCompare(mm1));
+
+console.log(mm1.trimEnd());// this function remove space form the rnd .
+console.log(mm1.trimStart());// this method remove the space form the start
+
+console.log(mm2.startsWith('a'));// this mathod chack the method  that our string starts with or not.// this method return typpe is BOOLEAN
+console.log(mm2.endsWith('a'));// This method  check that our string ends with or not.  this method return typpe is BOOLEAN
+
+// console.log(mm2.padStart(25));//this function add Hi at the starting side of the string.iF WE DO not pass any value in it it will pass use "<space >" to incresh the string length.
+console.log(mm2.padEnd(21,'hi'));// this function add Hi at the ending side of the string.iF WE DO not pass any value in it it will pass use "<space >" to incresh the string length.
+console.log(mm2.length);
+
+console.log(mm.repeat(5));// this mwthod is use to repeat the value of it.
+
+console.log(mm.search(/[A-Z]/g));
