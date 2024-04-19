@@ -1,0 +1,69 @@
+-> A regular expression is a pattern that the regular expression engine attempts to match in input text.
+-> After write regex if we do not add the "/g" it will check only the first word.
+-> It is case sensitive , so "A" and "a" are different characters.  
+-> If you want to make it case insensitive use "/i" flag after regex . 
+-> To search for something which can be present or absent use | symbol like (pattern1|pattern2)
+-> For searching any number of occurrences of a character/group use + symbol * means zero or more occurrence of a character/group.
+-> Quantifiers : They tell how many times a character/group should appear in the matching string.
+
+
+---- Character Set-------
+-> /[abc]/gm = If  any of these letters(a,b,c) appears anywhere in the document then match it.
+-> /[abc]000/gm = If  any one letter between a,b,c followed by 3 zeros then match it.Because in square bracket things only match the first postion.
+-> /[^abc]/gm= If we use " ^ "  inside brackets then it means anything but not these letters . If we write these letters after using this symbol this will not match.
+
+-------Range------
+-> /[a-z]/gm = This is use to set the range. a to z in samll letter. We can define a to e [a-e] like this.
+-> /[A-Z]/gm = Capital Letter Matching.
+-> /[a-zA-z]/gm= Small And capital Letters Matching.
+-> /[0-9]/gm = Numeric Matching.
+-> /[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/gm = This matchfor Ten digit numbers.
+-> /[0-9][0-9]/gm = This match for Two digit numbers.
+ 
+
+ ------ Repeating--------
+ -> /[0-9]{10}/gm=  This matches exactly 10 digits.
+
+ ===>" /[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]/gm "= Instead of writing this we can write this to match a  ten dgit number "/[0-9]{10}/gm" .
+
+-> /[a-z]{5}/gm = This matches exactly any 5 small alphabets form a to z. it should be  minimum 5 maximum unlimited.
+-> /[a-z]{minimum,maximum}/gm = This matches between 5 to 8 small alphabets from a to z. It should  contain at least minimum value alphabet but no more than maximum value. Here we set the range of the alphabets.
+     ex= /[a-z]{5,8}/gm
+     Here {5,8} means between 5 and 8 repetitions of the preceding element. So here it would match any five to eight.
+-> This goes same for numbers.
+
+-------MetaCharacters---------
+-> \d =  Match any digit characters. same as [0-9]
+-> \w = match any word character(same as [a-z A-Z 0-9 _]). It also includes  "_".
+-> \s = Matches any whitespace character including space, tab, newline and other separators.
+-> \t = Matches ta tab character only.
+
+-> /\d{3}\s\w{5}/gm = This means match three digits followed by one white space followed by five word characters.
+
+----------Special Characters------------
+-> + = The one or more qualifier.
+-> / =  Slash itself needs to be escaped by using "\/" because it has special meaning in Regular Expression.
+-> { } = Curly braces used for grouping constructs.
+-> ^ = Matches start of line.
+-> $ = Matches end of line.
+-> * = If we use this it makes the very previous characterS as optional character & set[] also. It works in " MULTIPLE " Character.
+-> ? = If we use this it makes the very previous character as optional character & set[] also. It works in "SINGLE" Character.
+-> . =  matches any character
+
+-> /ankitm?/gm = ankitm will match ankit. Because we us e "?" this after 'm'. So this makes m optional character .
+-> /car./gm = car. will not match car.  but cars will match. Because "." doesnot match new lines. When we are using . we are bound give a character at the place of .
+->/a\*/gm = Here "*." will not work because "*" have special meaning in regular expression so we need to escape it .
+
+-----------Start and Ending  pattern------------------
+-> /^[a-z]{5}$/mg =  This will match five small letters at starting and ending of each lines. Here ^ indicate the starting the line. And $ indicate the end of the line.
+-> /^[a-z]{5}$/mg= if we remove the ^ this form the line it it will match the last 5 characterS.
+-> /^[a-z]{5}$/mg= if we remove the $ this form the line it it will match the first 5 characterS.
+-> /^[a-z]{5}$/mg= if we remove both this form the line it it will match the every 5 characterS was available in a line.
+
+
+------------Alternate Character-------------
+-> " | " = This is use ad or. Like p|t 
+/(p|t)yre/mg= In this we can write both pyre and tyre.
+
+------------Creating From--------------
+/^([a-z\d\-]+)@([a-z\d\_]+)\.([a-z]{2,8})\.?([a-z]{2,8})?$/g  this syntax we can use for email.
