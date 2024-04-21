@@ -44,3 +44,15 @@ console.log(Object.entries(tenderUser));// Output : [ [ 'name', 'Ankit' ], [ 'is
 
 // before use any property of any obejct using this method we can check this property available or not.
 console.log(tenderUser.hasOwnProperty("name"));// Determines whether an object has a property with the specified name. output:true
+
+
+// Destructuring Object
+const course ={
+courseName:"java",
+price:"1299",
+courseInstructor: "Mr.Mukesh"
+};
+
+const{courseInstructor:techer}=course; //we are just taking one value from object and giving it a new variable name. by using " : " we can change the name of key in the variable.
+// console.log(courseInstructor);
+console.log(techer);
