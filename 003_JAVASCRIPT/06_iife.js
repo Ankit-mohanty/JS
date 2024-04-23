@@ -9,13 +9,13 @@ Avoid polluting global namespaces
  */
 
 
-     // passing the vakue in it 
-     ((names)=>{
-        console.log(`my name is ${names}`);
-     })("Rahul");
+// passing the vakue in it 
+((names) => {
+    console.log(`my name is ${names}`);
+})("Rahul");
 
 
-     // THis is called named IIFE
-     (function chai() {
-        console.log(`Rahul is here`);
-     })();
+// THis is called named IIFE
+(function chai() {
+    console.log(`Rahul is here`);
+})();
