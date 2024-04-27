@@ -1,0 +1,39 @@
+const coding = ["JS", "java", "Ruby", "Python"];
+const values = coding.forEach(item => {
+    // console.log(item);
+    return item;
+});
+console.log(values);// output = undefined
+
+// By using filter
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let newnum = nums.filter(element => element < 9);
+let newnum = nums.filter(element => {
+    return element < 9
+});
+console.log(newnum);
+// By using for loop
+const num1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const newNum1 = [];
+num1.forEach(value => {
+    if (num1 > 4) {
+        newNum1.push(num1);
+    }
+});
+
+const books = [
+    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
+    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
+    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
+    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
+    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
+    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
+    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
+    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
+    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
+];
+// const userbooks = books.filter((bk) => bk.genre === "History");
+// const userbooks = books.filter((bk) => bk.publish > 2000);
+const userbooks = books.filter((bk) => bk.publish < 2000 && bk.genre === "History");
+
+console.log(userbooks);
