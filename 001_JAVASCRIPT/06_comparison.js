@@ -5,6 +5,6 @@
 console.log(null == 0);// flase
 console.log(null >= 0);//true*/
 
-console.log("2"==2);// Here it is only check the value. Not dat type.
+console.log("2" == 2);// Here it is only check the value. Not dat type.
 console.log(undefined == 0);// inevery case undifined gave always flase.
 //=== wecall this strict check.It check the value and also the dat type.

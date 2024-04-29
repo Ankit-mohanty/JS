@@ -20,7 +20,7 @@ console.log(valuenum);// here it return because it can not convert the sting to 
 //CONVERT INT TO BOOLEN
 let isLogedin = 1;// if we put a string here it convert into true.if we use empty string it gives false
 let booleanLogein = Boolean(typeof isLogedin);
-console.log(booleanLogein);
+console.log(booleanLogein); F
 /*
 1 convert into boolen gives true.
 0 convert into boolen gives false.
@@ -32,11 +32,11 @@ let a = 25;
 let intToString = String(a);
 console.log(typeof intToString);
 
-let c=20;
-let makestring=String(c);
+let c = 20;
+let makestring = String(c);
 console.log(typeof makestring);
 
 let ankit = 52;
-console.log("Ankit = " +typeof ankit);
-let convertitintoString= String(ankit);
-console.log( "Ankit =" + typeof convertitintoString);
+console.log("Ankit = " + typeof ankit);
+let convertitintoString = String(ankit);
+console.log("Ankit =" + typeof convertitintoString);
