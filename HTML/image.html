@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+      html {
+        font-family: "Libre Baskerville", serif;
+      }
+
+      img {
+        max-width: 250px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>image</h1>
+    <img
+      src="./image/img.jpg"
+      alt="Iron man"
+      width="100%"
+      height="auto"
+      title="html image"
+      loading="lazy" />
+    <br />
+    <a href="https://github.com/Ankit-mohanty" target="_blank">
+      <img
+        src="./image/img.jpg"
+        alt="Clickable image"
+        width="500"
+        height="auto"
+        loading="lazy" />
+    </a>
+
+    <img
+      src="./image/img.jpg"
+      alt="My git hub account"
+      usemap="#map"
+      width="250"
+      height="150" />
+    <!-- hERE WE CINNECT THE MAP TO IMAGE -->
+    <map name="map">
+      <area
+        shape="rect"
+        coords="0,0,150,125"
+        href="https://github.com/Ankit-mohanty"
+        alt="my git hub account"
+        target="_blank" />
+    </map>
+    <br />
+
+    <img
+      src="./image/img.jpg"
+      alt=" REsponsive image"
+      srcset="image/image-400.jpg 400w
+     image/image-600.jpg 600w
+     image/image-800.jpg 800w"
+      sizes="(max-width:600px) 400px,
+     (max-width:800px) 800px" />
+
+
+     <br>
+
+
+     <picture>
+      <source srcset="./image/img.jpg" type="image/jpg">
+      
+     </picture>
+ 
+ <figure>
+  <img src="./image/img.jpg" alt="iron man">
+  <figcaption>Iron Man</figcaption>
+ </figure>
+    </body>
+</html>

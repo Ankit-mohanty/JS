@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FDorm tag</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+      html {
+        font-family: "Libre Baskerville", serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Html FOrm Tag</h1>
+    <hr />
+
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" />
+      </div>
+      <div>
+        <label for="useremail">UserEmail</label>
+        <input type="email" id="useremail" />
+      </div>
+      <div>
+        <label for="textarea">Message</label>
+        <textarea name="" id="textarea" cols="10" rows="10"></textarea>
+      </div>
+      <input type="submit" value="submit" />
+    </form>
+    <hr />
+    <form>
+        <div>
+      <label for="password">Password</label>
+      <input type="password" name="" id="password" placeholder="Enter password"/>
+    </form>
+</div>
+
+<div>
+  <label for="number">Mobile number</label>
+  <input type="number" max="5" min="1"  id="numner">
+</div>
+
+<div>
+  <label for="gender">Gender</label>
+  <input type="radio" name="gender" value="music">male
+  <input type="radio"  name="gender" value="music">female
+ 
+</div>
+<div><label for="hobies">HoBBy</label>
+  <input type="checkbox" name="music" id="">
+  <input type="checkbox" name="music" id="">
+</div>
+
+<div>
+  <label for="count">Name of the coutryu</label>
+
+  <select name="count " id="count">
+    <option value="usa">India</option>
+    <option value="usa">USA</option>
+    <option value="usa">UK</option>
+  </select>
+</div>
+
+<div>
+  <label for="count"></label><input type="text" name="" id="count" list="counts">
+  <datalist id="counts">
+    <option value="USA ">USA</option>
+    <option value="INDIA">India</option>
+    <option value="ENG">UK</option>
+  </datalist>
+</div>
+
+<div><label for="file"></label><input type="file" id="file"></div>
+  </body>
+</html>
