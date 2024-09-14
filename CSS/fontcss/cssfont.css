@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+/* we use font face annotatoion to crete custom font. */
+@font-face {
+    font-family: "ankit";
+    src: url('./fonts/moenstrum..ttf') format("TrueType")
+}
+
+body{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+}
+
+.hero{
+    width: 50%;
+
+}
+h1{
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    font-family: "Merriweather", serif;
+    font-family: ankit;
+    font-style: italic;
+    /* usinf this we can convert small leter to capital letter withgout incresh in size... Welcome */
+    font-variant: small-caps;
+}
+
+p{
+    font-family: "Merriweather", serif;
+    font-style: oblique;
+    font-weight: 700;
+}
+
+/* what is fallback font?
+font-family: "Merriweather", serif; here serif is fallback font....means if the main font soenot support the by any broser then fall back font will executed..
+*/
+
+/* | we can get font by google font or dafont website */

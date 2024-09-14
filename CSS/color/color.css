@@ -1,0 +1,55 @@
+h1{
+    /*  ere color is a predefine atribute in css */
+    /* The style of writing color we call this named color. */
+    color: blueviolet;
+}
+
+/* Using "."  oprator we are traget the class of html.*/
+
+.para{
+    /* color: blueviolet; */
+    /* we call this type of call define as rgb color  */
+    color: rgb(255, 0, 0);
+}
+/* We use "#" oparetor to traget the hhtnl id.*/
+#pp{
+
+    /* here we usinf "RGBA" where a stands for alpha chanel to control opcity. and allpha value should be in between 0-1*/
+    color: rgba(0, 0, 255, 0.5);
+}
+
+/* Peseudo class is  a keyword tat added a selector to specify the special state of an element.*/
+#btn:hover{
+
+    /* here we are using hexadecimal color format.. */
+    background-color:#2E073F;
+    color:aqua ;
+}
+
+h2{
+    /* HSL(Hue,Saturation,Lightness) */
+    color: hsl(231, 69%, 34%);
+
+
+}
+
+/* COLOR HUNT website for the color..... */
+
+/* We can acieve tranparancy by alpha chanel and another way is by using the property of css "tranparent" */
+/* how can you set the text color of an element to match the current color of another css property within the samne element?? 
+-> By using "current color " property of css..
+*/
+.rahul{
+    color: #2E073F;
+}
+.para{
+    color: currentColor;
+}
+
+/* IN HSl Hue means puriest form of your color.
+Tint means a pure color just white added..
+Shade means a pure color just black color added...
+Tone meanns a pure color just add grey color..
+ black color hash valeue is 000000 and white color hsl value is fffffff. Except these two colors if write any thing value same like #11 it will be consider  as greay color..
+ 
+*/

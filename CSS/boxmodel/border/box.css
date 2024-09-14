@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  text-align: justify;
+  display: grid;
+  place-items: center;
+}
+
+.border {
+  /* width: 62.5%; */
+  /* 10 px is  border size, solid is border style, and last one is border color. */
+  /* border: 10px solid blueviolet ; */
+
+  /* write the same thing individualy */
+  /* border-width: 62.5%;
+    border-style: solid;
+    border-color:black ; */
+
+  /* we can also write like this?? */
+  /* border-top: 0.56rem solid blueviolet;
+  border-right: .56rem dotted blueviolet;
+  border-left: 0.56rem ridge blueviolet;
+  border-bottom: 0.56rem double blueviolet; */
+}
+
+div{
+  width: 31.25rem;
+  height: 31.25rem;
+  
+  background-color: aqua;
+  /* if we right this it will cover all the corner of the box */
+  border-radius: 36% 64% 25% 75% / 30% 30% 70% 70% ;  
+
+  /* this ia according to the 
+top-left| top-right | buttom-right |buttom-lleft */
+  /* border-radius: 0.625rem 0.625rem 1.25rem 1.25rem; */
+
+/* if  we give the border radious 50% it will make a circle..  It worked only whenn the height and width of the border is the  same.*/
+  /* border-radius: 50%; */
+  /* background-image: linear-gradient(
+    to right top,
+    rgb(46, 7, 63),
+    rgb(122, 28, 172),
+    rgb(173, 73, 225),
+    rgb(235, 211, 248)
+  ); */
+
+
+  /* we can achieve this type of color by using colorspace website and uigredient.com */
+  /* background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
+  
+  background: #314755;
+  background: -webkit-linear-gradient(to right, #314755, #26a0da);
+  background: linear-gradient(to right, #314755, #26a0da);
+}
+/* 
+In css the border property is use to controls the borders of the html elements. Borders are use to visualy separated and define bounderiesof elements on web page.. Border property is use to specify the style color of the border.
+*/

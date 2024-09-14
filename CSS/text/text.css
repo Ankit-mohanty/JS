@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    background-color: aqua;
+    display: grid;
+    place-items: center;
+    font-family: "Merriweather", serif;
+   
+
+}
+.hero{
+width: 50%;
+}
+h1{
+    font-weight: 700;
+    text-align: center;
+    /* this is get an under line in the text.. */
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 10px;
+    text-decoration-style: wavy;
+    /* this will make every word first letter capital.. if we use property value as "Capiitalize" */
+    text-transform: capitalize ;
+
+/* if put - in x axies the shadow will move left side if we put - in y axies the shadow will move upper side.. */
+    /* text-shadow: -12px -12px 1px red; */
+    text-shadow: 12px 12px 20px #32012F;
+}
+
+p {
+    font-size: 122.25%;
+    text-align: center;
+    text-align: justify;
+    letter-spacing:1.6px;
+    word-spacing: 7%;
+    line-height: 1.5;
+    /* this will print the total paragraoh in a single line.. */
+    /* white-space: nowrap    ; */
+    text-shadow: 2px 2px 10px #150050;
+}
+
+a{
+    text-decoration: none;
+
+    /* thse three values are first is x-axies, 2nd one is y-axies and 3rd one is blur radious.. */
+    text-shadow: 50% 50% 25% black ;
+}

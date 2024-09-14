@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-family: "Merriweather", serif;
+  text-align: inherit;
+  display: grid;
+font-weight: bold;
+background-image: url("https://img.freepik.com/free-vector/cartoon-style-nerd-character-design_52683-81717.jpg?w=740&t=st=1726161481~exp=1726162081~hmac=2a6600bf4fbe2b3c4fd7513ef77eb7d025d14a1531ab540881cdf93a4533224b");
+}
+h1{
+  color: white;
+  margin-left: 6.25rem;
+}
+.marzin-1 {
+  width:75rem;
+  height: 12.5rem;
+  border: 0.3rem transparent black;
+  color: antiquewhite;
+  background-image: linear-gradient(
+    to right top,
+    #000962,
+    #280047,
+    #2c0030,
+    #27001e,
+    #1e0011,
+    #280c1b,
+    #351224,
+    #42192d,
+    #6f2553,
+    #9b3382,
+    #c446ba,
+    #e65ffb
+  );
+
+/* margin individually */
+  /* margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem; */
+
+/* giving margin in a  single line */
+  /* margin: 6.25rem 6.25rem 6.25rem 6.25rem; */
+
+padding: 0.625rem;
+  margin: 6.25rem 6.25rem 6.25rem;
+}
+
+
+.margin-2{
+  width: 75rem;
+  height: 12.5rem;
+  border: 0.3rem transparent black;
+  color: antiquewhite;
+  background-image: linear-gradient(
+    to right top,
+    #000962,
+    #280047,
+    #2c0030,
+    #27001e,
+    #1e0011,
+    #280c1b,
+    #351224,
+    #42192d,
+    #6f2553,
+    #9b3382,
+    #c446ba,
+    #e65ffb
+  );
+padding: 0.625rem;
+
+/* If we make margin auto it will automatically come to center. It will work only left and right noy top and bottom.. */
+  margin: auto;
+}
+/* the margin property define  the space out side the elements border. It creates separation between the elements and other elements in layout. */
+/* Auto values :- you can margin auto to make the element horizontally center within the container. This is commonly use for centering the block level elements.*/
+/* in margin -ve value is working. */
+
+/* collapsing margin :- When two margins meet they can collapse in to a single margin.This  behavior is important to understand especially when sealing with elements like paragraph and heading. The larger of two margins take precedence. */

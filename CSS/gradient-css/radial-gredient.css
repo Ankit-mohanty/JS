@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    /* background-image: radial-gradient(circle,red,yellow); */
+    /* ellipse mean egg shape */
+    /* background-image: radial-gradient(ellipse,red,yellow); */
+    background-image: repeating-radial-gradient(circle,red,yellow 50px);
+}

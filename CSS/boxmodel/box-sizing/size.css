@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+
+/* this one we write to avoid the horizental scroll bar..in any website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+  text-align: inherit;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  font-weight: bold;
+
+}
+
+
+.section-1{
+
+    height: 12.5rem;
+    width: 62.5rem;
+    border: 0.313rem solid black;
+    color: aqua;
+    padding: 0.313rem;
+    background-image: linear-gradient(
+        to right top,
+        #000962,
+        #280047,
+        #2c0030,
+        #27001e,
+        #1e0011,
+        #280c1b,
+        #351224,
+        #42192d,
+        #6f2553,
+        #9b3382,
+        #c446ba,
+        #e65ffb
+      );
+      box-sizing: border-box;
+}
+
+/* if we define width without box sizing it will automatically add the padding and margin. But we do not need this to avoid this we are using box sizing..  */
+
+/* wideth contain border lef and border right  */
+/* height contain boreder  buttom and boder top */

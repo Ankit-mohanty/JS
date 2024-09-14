@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.shadow{
+    width: 18.75rem;
+    height: 18.75rem;
+    padding: 2.5rem;
+    background-color: burlywood;
+    border-radius: 50%;
+/* here we create the shadow in the right side of the object */
+    /* box-shadow: 20px 0 0 60px #ffb000; */
+
+    /* it move to bottom */
+    /* box-shadow: 20px 20px 0 60px #ffb000; */
+
+/* here we add blur effect in shadow. */
+    box-shadow: 0 0 50px 30px yellow;
+
+}
+
+
+
+
+
+
+
+/* box-shadow: 2pxs 12px 3px 4px red 
+x-axes, y-axes blur density/spread color
+*/

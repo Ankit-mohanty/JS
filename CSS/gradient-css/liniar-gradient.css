@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+
+/* this one we write to avoid the horizental scroll bar..in any website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+html {
+    font-family: "Merriweather", serif;
+    text-align: inherit;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    font-weight: bold;
+  } */
+section{
+    width: 100%;
+    height: 100vh;
+    /* by default it moves top to bottom */
+    /* background-image: linear-gradient(to left, red,yellow); */
+    /* background-image: linear-gradient(90deg, red,yellow); */
+    /* this means top left corner to bottom right corner */
+    /* background-image: linear-gradient(to bottom right, red,yellow); */
+    /* this is the opposite of above onle color place is switcs  */
+    /* background-image: linear-gradient(to top left, red,yellow); */
+
+
+    /* it  mean the same color will repeat after every 45px  */
+    background-image: linear-gradient(circle,
+   red ,yellow);
+  }
+
+  /* Basically linear gradient mean mixture of two color. You must need two colors to achieve the liner gradient.. */
+  /* background-image: liner-gradient(to right, red,yellow) 
+  above line mean to right mean left to right, 1st red color and then the mixture of red and yellow color and then yellow color or we can right angles instead of direction.
+  linear-gradient is a property of css use to achieve mixture of multiple color.
+
+  */
+
+
+
+  /* what is linear gradient? 
+    The linear gradient is a css function create an image consisting of progressive transition between two or more colors in a straight line.
+  */
+
+/*difference between linner gradients or redial gradients
+
+linear gradient always make straight line but radial gradient always make circular transition
+ */

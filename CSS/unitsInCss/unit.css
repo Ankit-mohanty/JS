@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+*{
+    font-family: "Libre Baskerville", serif;
+}
+
+
+/* Using pixel */
+/* h1{
+    font-size: 54px;
+}
+p{
+    font-size: 34px;
+}
+li{
+    font-size: 44px;
+} */
+
+/* using percentage */
+/* 16 pixels is equal to 100%. 
+1px=6.25%
+*/
+/* h1{
+    font-size: 337.5%;
+}
+p{
+    font-size:225%;
+}
+li{
+    font-size: 275%;
+} */
+
+/* Using em */
+/* 1em=16px */
+/* h1{
+    font-size: 3.375rem;
+}
+p{
+    font-size:2.25em;
+}
+
+.parent{
+    font-size: 10px;
+}
+li{
+    font-size: 2.75em;
+    here the font size is 27.5px.. Because we set the nearest font size 10px. Means for this li 1em = 10px..
+} */
+
+
+/* using rem */
+/* it is not target the nearest font size.. It is traget the root font size.. means we decaclare font size  in html tag. !rem =10px */
+
+
+/* 16px=100%
+1px=6.25%
+10px=62.5%
+*/
+
+html{
+    /* font-size: 10px; */
+    /* we use percentage because it is relative lenth. */
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 3.375rem;
+}
+
+p{
+font-size: 2.25rem;
+}
+li{
+    font-size: 2.75rem;
+}
+
+
+/* 
+There are two type of length in css. One is Absolute and another one is Relative length.
+Adssolute Length:- The absolute length is fixed and a length expressed in any of these will appear as same size..
+
+Relative Length:- The relative length is specify the length relative t6o anootrher length property. Relative length unit scale better between different rendering medium..
+
+px(pixels):- px is the absolute of the of mesurement in css, representing the smallest part of the screen..
+it provides a fix  consistance size to all devices..
+
+percentage(%):- It is the relative units based on the elements  or size and contain block.
+widly use to create a respomsive layout.
+
+
+Em(em):- em is rekative unit that is calculated based on the font size of the parent element.
+When you set an element size in em, it is ralytive to the font size of  its nearest parent with a spacified font size..
+
+
+Root Em(rem):-rem is also a relative unit based on the font size of the root html.
+uSING rem is  ensure that the size is consistant through  out the entire document making it 
+*/

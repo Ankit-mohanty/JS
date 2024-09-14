@@ -1,4 +1,5 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic",
-    "html.format.enable": false
+  "java.compile.nullAnalysis.mode": "automatic",
+  "html.format.enable": false,
+  "cSpell.words": ["Ankit"]
 }

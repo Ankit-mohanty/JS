@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+
+.shadow{
+    width: 18.75rem;
+    height: 18.75rem;
+
+}
+
+img{
+
+    /* if we box shadow we can not create shadow in the shape of image we can only create the shadows in shape of image border . */
+    /* box-shadow: 0 0 20px 20px red; */
+
+
+    /* we use drop shadow to create the shadow of imageshap.. */
+    filter: drop-shadow(0 0 10px  white);
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+html {
+  font-family: "Merriweather", serif;
+  text-align: inherit;
+  display: grid;
+  place-items: center;
+}
+#padding{
+    width: 31.25rem;
+    height: 31.25rem;
+    border: 0.625rem solid rgb(61, 2, 73);
+    background-image: linear-gradient(to right top, #28047d, #0055ad, #008bbb, #75bcc3, #d9e8e3);
+    /* This will wwork as all side samme. */
+    /* padding: 1.875rem; */
+
+    /* this will consider as top and buutom | and left and right */
+    /* padding: 1.875rem 2.875rem; */
+
+    /* we can define this as 4part also. */
+    /* top|right|buttom|left */
+    padding: 1.875rem 1.875rem 1.875rem 1.875rem;
+}
+
+/* Padding is use to space around the element ccontent inside of any define borders. */
+/* Basically p[adding is space between border and content. */
+
+/* what is the purpose of negetive padding in css??
+ans- negetive paddibng is not a standard css property. Padding is always a positive value create a space a between content and border. negetive padding on the other hand overlap the elements.
+*/
