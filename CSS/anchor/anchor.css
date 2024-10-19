@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* this one we write to avoid the horizental scroll bar..in any website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+
+body {
+  background-color: black;
+
+  color: azure;
+  height: 100vh;
+}
+.container {
+  height: 100vh;
+  max-width: 82.5rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+/* .grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+} */
+.grid-two-column {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 3.375rem;
+}
+.hero-content p {
+  font-size: 1.125rem;
+  letter-spacing: 0.063rem;
+  margin: 2rem 0 4rem 0;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  filter: drop-shadow(0.313rem 0.313rem 0.625rem white);
+}
+
+.hero-content a {
+  color: black;
+}
+
+.hero-content a:link {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-content a:visited{
+color: brown;
+}
+.hero-content a:hover{
+  color: blue;
+}
+
+/* active state means if we click and hold on a link we call this actiuve state..
+ */
+.hero-content a:active{
+  color: red;
+}
+
+
+
+
+/* 
+link("a:link")=> This is the default state of unvisited link.
+visited("a:visited)=> This state apply to the link if the user already visited to the link.
+hover("a:hover")=> this state triggers when the mouse pointer over tle link.
+active("a:active")=> This state triggers when user click on a link.
+
+we are bound to follow the order of the link state.
+*/

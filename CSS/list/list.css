@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+
+/* this one we write to avoid the horizental scroll bar..in any website */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+html {
+  font-family: "Merriweather", serif;
+}
+body{
+    display: grid;
+    place-items: center;
+}
+.lists{
+    width: 31.25rem;
+    height: 2.5rem;
+    background-color: aliceblue;
+    border-radius: 0.625rem;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px  ;
+}
+ul{
+    list-style-type: upper-roman;
+
+    /* this wil make list style inside the border */
+    list-style-position: inside;
+/* we can set a image as thelist */
+    list-style-image: url("https://media.tenor.com/JUFucXDL0SsAAAAi/minumi-minumiglaucus.gif");
+}
+li{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    border: 0.125rem solid black;
+    position: relative;
+}

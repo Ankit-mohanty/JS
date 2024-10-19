@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* this one we write to avoid the horizontal scroll bar..in any website */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  padding: 50px 100px;
+  background-color: hsla(0%, 0%, 94%);
+}
+
+#main-content {
+  color: black;
+  text-align: left;
+  font-size: 64px;
+  margin-bottom: 34px;
+}
+
+p {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #104366,
+    #1e7194,
+    #37a3be,
+    #5fd8e3
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: white;
+
+  padding: 20px 30px;
+  margin-bottom: 24px;
+}
+
+a {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #104366,
+    #1e7194,
+    #37a3be,
+    #5fd8e3
+  );
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  color: white;
+
+padding: 10px;
+margin: 30px;
+
+/* These are not working before display inline   */
+width: 200px;
+height: 100px;
+margin-top: 300px;
+
+
+/* display: inline-block; */
+
+
+/* it is define to a complete line space. */
+display: block;
+
+}
+
+/* 
+Block level Elements
+The block value makes the element block level element. Block level elements create a new block formatting context and take up the full width available. they start a new line and pushing the subsequent element below them.
+we write block level elements like this 
+display:block;
+*/
+
+/* 
+New line start: They start on the new line onj the webpage layout.
+Full width: They often taken of the entire width of the container.
+No Side-By-Side: They do not take sit next to exch other.
+Vertical stacking: they stack on the tpo of ech other on creating the vertical layout.  
+*/
+
+/* 
+display:inline ; the inline value makes the element inline element. inline elements only take off as much width as necessary., and the do not create a new block formatting context.Inline elements can appear on the same line as other inline element.
+*/
+
+
+
+/* 
+display:inline-block; The inline block values combines both aspect of both block and inline. Element with inline block behave like inline elements but can have dimensions (width and height) vertical alignment.
+*/

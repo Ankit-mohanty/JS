@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+#main-heading {
+  font-size: 6rem;
+  color: #1e1403;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+p {
+  line-height: 40px;
+  font-size: 1.5rem;
+}
+
+.overflow-div-1 {
+  margin-top: 50px;
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 09) 0 -3px 5px;
+  border: 5px solid #9eb384;
+  padding: 10px;
+
+
+/* If we use this we an not able to see the overflow contain. */
+  /* overflow: hidden; */
+
+/* If we use this we can able to read the data by scrolling. */
+  /* overflow: scroll; */
+/* If we use this browser handel overloading automatically.. */
+overflow: auto;
+
+}
+
+/* 
+OVER FLOW
+? the Overflow property in css is used to control how the content overflows it containing element whe it does not fit withing available space. It is a useful property to handling content that exceeds it container dimensions.
+
+*/
+/* 
+?Overflow : visible; This is the default behavior where content can overflow it,s container without any clipping. usee it when you want the content that exceeds its container diameter.
+
+Basically we can see the overflow if we are using overflow visible..
+*/

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: black;
+
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 82.5rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content a:link {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-content a:hover {
+  color: blue;
+}
+
+.section-elements {
+  padding-bottom: 6.25rem;
+}
+
+/* Descendent selector because here parent is section-elements and child is container */
+.section-elements .container {
+  height: auto;
+  background-color: azure;
+  border-radius: 0.625rem;
+  color: black;
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 3.375rem;
+  position: relative;
+  color: #f806cc;
+
+}
+
+.hero-content p {
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+body {
+    background-color: black;
+  
+    color: azure;
+    height: 100vh;
+  }
+  
+  .container {
+    height: 100vh;
+    max-width: 82.5rem;
+    padding: 4rem 0;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+    align-items: center;
+    gap: 6.4rem;
+  }
+  .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-content a:link {
+    background-color: #fff;
+    display: inline-block;
+    padding: 0.625rem 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 0.313rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hero-content a:hover {
+    color: blue;
+  }
+  
+  .section-elements {
+    padding-bottom: 6.25rem;
+  }
+/* it select the content-1's first child not ul. But it does not work if the ul is not the first child of the content.. */
+  .content-1 p:first-child{
+    color: red;
+  }
+
+  .content-1 li:last-child{
+    color: blue;
+  }
+
+
+  .content-1 li:nth-of-type(1){
+    color: brown;
+  }
+
+
+  /* If we use nth child we are using this will consider the class first child. No the li first child */
+  .content-1 li:nth-child(even){
+    color: green;
+  }

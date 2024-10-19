@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* this one we write to avoid the horizontal scroll bar..in any website */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  padding: 5rem 10rem;
+}
+
+#main-heading {
+  color: black;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.parent-div {
+  width: 800px;
+  height: 600px;
+  color: white;
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #250617,
+    #3d012e,
+    #4f004f,
+    #54007a
+  );
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  color: white;
+}
+
+.parent-div {
+  position: relative;
+  /* margin-left: 200px; */
+  /* This is work only when we use position property. */
+  left: 250px;
+}
+
+.child {
+  position: absolute;
+}
+
+.child-2 {
+  top: 0;
+  right: 0;
+}
+
+.child-3 {
+  bottom: 0;
+  right: 0;
+}
+
+.child-4 {
+  bottom: 0;
+}
+
+/* .child-5 {
+  left: 350px;
+  top: 250px;
+} */
+
+
+.child-5{
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+/* 
+Interview:-
+   By default an element with position absolute is positioned in the top left corner of its containing block without any offset.
+
+*/
+
+/* 
+?how can you ensure that the an element with position absolute is positioned relative to the entire viewport? 
+To position an element with an position:absolute; relative to viewport. Ensure that none of the ancestors have a position property set to relative , absolute,fixed and sticky. this way it will use the view port as its containing block.
+
+*/

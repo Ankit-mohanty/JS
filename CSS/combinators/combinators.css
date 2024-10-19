@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* this one we write to avoid the horizontal scroll bar..in any website */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  background-color: black;
+
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 82.5rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content a:link {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-content a:hover {
+  color: blue;
+}
+
+.section-elements {
+  padding-bottom: 6.25rem;
+}
+
+/* Descendent selector because here parent is section-elements and child is container */
+.section-elements .container {
+  height: auto;
+  background-color: azure;
+  border-radius: 0.625rem;
+  color: black;
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 3.375rem;
+}
+
+.hero-content p {
+  letter-spacing: 1px;
+  margin: 2rem 0 4rem 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+.content-1,
+.content-2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+  font-size: 3rem;
+}
+
+/* descendent selector */
+.content-1 ul p {
+  font-weight: bold;
+  color: green;
+}
+
+
+
+.content-1 ul li{
+  color: red; 
+}
+
+
+/* direct child selector */
+.content-1 ul>li{
+  color: blueviolet;
+}
+
+
+/* adjacent siblings */
+
+.content-1 ul p+li{
+color: pink;
+}
+
+
+.content-1 ul p~li{
+  color: purple;
+}
+
+
+
+/* CSS combinators are use to define relationship between different elements in HTML documents. the allow you target elements based on their position & hierarchy within the document structure.. */
+
+/* Descendent selector=> select an element that is descendent of another. */
+
+/* child selector=> selects an element that is direct child of the another element */
+
+/* adjacent sibling selector=> select the element tha immediately proceeded by another element. */
+
+/* general sibling selector=> select all the elements that are sibling of another elements and share same parent. */
+
+/* universal selector=> select all the elements. */

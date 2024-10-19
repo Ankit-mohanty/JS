@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: black;
+
+  color: azure;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 82.5rem;
+  padding: 4rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content a:link {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-content a:hover {
+  color: blue;
+}
+
+.section-elements {
+  padding-bottom: 6.25rem;
+}
+
+/* Descendent selector because here parent is section-elements and child is container */
+.section-elements .container {
+  height: auto;
+  background-color: azure;
+  border-radius: 0.625rem;
+  color: black;
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 3.375rem;
+  position: relative;
+  color: #f806cc;
+
+}
+
+.hero-content p {
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* using pseudo element */
+#hero-heading::before {
+  content: "\f121";
+  font-family: "font awesome 6 free";
+  position: absolute;
+  top: -30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #a91079;
+}
+
+#hero-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 80px;
+  bottom: 0;
+  width: 55%;
+  border: 3px solid #570a57;
+}
+
+.hero-content p::first-letter{
+  font-size: 32px;
+  color: blueviolet;
+}
+.hero-content p::first-line{
+  text-decoration: underline;
+}
+
+
+/*  this work when we select a text */
+.hero-content p::selection{
+  background-color: #2E073F;
+}
+/*
+Pseudo Element 
+? ::before pseudo element : The pseudo element is used to insert content before the content of an element. It is often employed to add decorative element  like icon or text without modifying the actual HTML content. 
+
+
+? ::after pseudo element : The pseudo element is used to insert content after the content of an element. It is often employed to add decorative element  like icon or text without modifying the actual HTML content. 
+*/

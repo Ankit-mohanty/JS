@@ -16,5 +16,26 @@ body{
 
 img{
     /* make the image black and white image. */
-    filter: grayscale();
+    /* filter: grayscale(); */
+
+    /* This is use to blur an an image. */
+    /* filter: blur(2rem); */
+
+    /* use to0 handel the brightnness. 
+    by default the brightness of the image is 100% and if we go less than 1000% it will be dark if we go 100% above it will ligher.
+    */
+    /* filter: brightness(80%); */
+
+/* this will elivate the dark color more */
+    /* filter: contrast(150%); */
+
+
+    /* filter: saturate(2); */
+
+    /* it make the image look like exray. */
+    /* filter: invert(); */
+
+    /* using multiple filter in a single filter */
+
+filter: grayscale() blur(1rem);
 }

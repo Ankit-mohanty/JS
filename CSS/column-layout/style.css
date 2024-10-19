@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: rgba(2, 76, 170, 0.5);
+}
+
+.hero-section {
+  margin-top: 100px;
+  width: 60%;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: left;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(55, 175, 225);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 1.5;
+}
+
+
+p{
+    column-count: 3;
+    /* This make ma line between 3 columns. */
+    column-rule: 1px solid black;
+    column-gap: 50px;
+    text-align: justify;
+}
