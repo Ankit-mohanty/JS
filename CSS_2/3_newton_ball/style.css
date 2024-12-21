@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.container {
+  width: 50rem;
+  height: 50rem;
+  background-color: transparent;
+  border-top: 1rem solid aqua;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+div {
+  width: 0.5rem;
+  height: 20rem;
+  background-color: aqua;
+  position: relative;
+}
+
+.container div::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -2.25rem;
+  width: 5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: aqua;
+}
+
+.container div:first-child{
+  animation: left-swing 2s linear infinite ;
+  transform-origin: top left;
+}
+
+@keyframes left-swing {
+  0%{
+    rotate: 0deg;
+  }
+  25%{
+    rotate: 45deg;
+  }
+  50%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+}
+
+
+.container div:last-child{
+  animation: right-swing 2s linear 1s infinite ;
+  transform-origin: top left;
+}
+
+@keyframes right-swing {
+  0%{
+    rotate: 0deg;
+  }
+  25%{
+    rotate: -45deg;
+  }
+  50%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+}

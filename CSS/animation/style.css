@@ -1,0 +1,100 @@
+/* ? animation-name: This property is used to specifies the name of keyframe animation you want to apply to an element. */
+/* ? animation-duration: This property is used to set the duration of the animation  in second or milliseconds.  */
+/* ? animation-timing-function: Defines the timing function that determines the acceleration and deceleration of the animation. 
+Common values include ease, linear, ease-out, ease-=in-out, and more.
+*/
+/* ? animation-delay: specifies the delay before the animation starts. it can be in seconds and milliseconds. */
+/* ? animation-iteration-count: set the number of times that animation repeat. Values like 3,infinite,2n(for even). */
+/* ? animation-direction: determines the animation forwards,backwards or alternate between the forward and backward. values are forward, backward, alternate, alternate-reverse */
+
+/* ! Important */
+/* ? @Keyframes:- 
+? This is not a property but it is rule that used to define the animations keyframe. Keyframe specifies the element should look at various points during the animation.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vh;
+  aspect-ratio: 1;
+}
+
+h1 {
+  padding: 50px;
+  color: white;
+  font-size: 40px;
+}
+
+.box {
+  width: 100px;
+  aspect-ratio: 1;
+  background-color: blue;
+  box-shadow: 0 0 0 15px #353f6d;
+  margin: 50px;
+  display: inline-block;
+  border-radius: 50%;
+
+  /* ? Animation */
+  /* we are bound to wrote these things */
+  animation-name: left-to-right;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: 2;
+
+  animation-direction: alternate;
+}
+
+/* @keyframes left-to-right {
+  form {
+    translate: 0%;
+  }
+  to {
+    translate: calc(90vw - 100px);
+  }
+} */
+
+/* Booth are working same */
+/* @keyframes left-to-right {
+  0% {
+    translate: 0%;
+  }
+50%{
+  translate: 50vw 50vh;
+}
+
+  100% {
+    translate: calc(90vw - 100px);
+  }
+} */
+
+@keyframes left-to-right {
+  0% {
+    background-color: #ffbb5cd5;
+    translate: 200px, 0%;
+  }
+  25% {
+    background-color: #fcbf49;
+    translate: calc(90vw - 10%);
+  }
+  50% {
+    background-color: #000000;
+    translate: calc(90vw - 10%), 300px;
+  }
+  75% {
+    background-color: #fcbf49;
+    translate: 20% 300px;
+  }
+  100% {
+    background-color: #ffbb5cd5;
+    translate: 20%, 0%;
+  }
+}

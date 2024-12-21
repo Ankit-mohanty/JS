@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     height: 100vh;
+     display: grid;
+     place-items: center;
+     background-color: black;
+}
+
+button{
+    padding: 12px 36px;
+    border: 2px solid aqua;
+    text-align: center;
+    color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+
+    &:hover{
+        border: 2px solid red;
+        color: red;
+animation: shaking 0.3s linear;
+    }
+
+
+}
+
+@keyframes shaking {
+    0%{
+        rotate: 20deg;
+    }
+    50%{
+        rotate:-20deg        ;
+    }
+    100%{
+        rotate: 20deg;
+    }
+}

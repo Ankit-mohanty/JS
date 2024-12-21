@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+body {
+  background-color: black;
+  width: 100px;
+  height: 100vh;
+  background-image: url("https://www.videogameschronicle.com/files/2022/09/MarioKart8Deluxe_BCP_Scrn_12.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+img {
+  width: 200px;
+  position: absolute;
+  bottom: 10%;
+  animation: run-mario 2.5s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes run-mario {
+  0% {
+    translate: 0%;
+  }
+  100% {
+    translate: calc(100vw - 200px);
+  }
+}

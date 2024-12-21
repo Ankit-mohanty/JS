@@ -1,0 +1,86 @@
+/* ! CSS VARIABLES */
+/* ? CSS variables also knowns as CSS custom properties allow to define the reuseable values in css code. They provide more flexible and maintainability top code. */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+/* this one we write to avoid the horizontal scroll bar..in any website */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  background-color: black;
+  color: var(--text-color);
+  height: 100vh;
+}
+.container {
+  height: 100vh;
+  max-width: 82.5rem;
+  padding: 3rem 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: start;
+}
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+}
+.grid-two-column {
+  display: grid;
+  align-items: center;
+  gap: 6.4rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.hero-content{
+ margin-top: 60px;
+
+}
+.hero-content h1 {
+  text-align: left;
+  font-size: 2rem;
+}
+ p {
+  font-size: 0.75rem;
+  letter-spacing: 0.063rem;
+  margin: 2rem 0 4rem 0;
+  color: aqua;
+}
+
+.para-class{
+  color: bisque !important;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  filter: drop-shadow(0.313rem 0.313rem 0.625rem var(--main-color));
+}
+
+.hero-content a {
+  color: var(--text-color);
+  color: black;
+}
+
+.hero-content a:link {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-radius: 0.313rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+:root {
+  --main-color: white;
+  --text-color: red  !important;
+}

@@ -1,0 +1,157 @@
+/*? Css grid layout often refer to simply as grid, is a 2D layout system in css that allows you to design the complex web layouts with rows and columns. It provides highly flexible and precise way to arrange the content in the wab page. 
+*/
+
+/* ! Two dimensional grid */
+/* ? Unlike traditional layout method such as the box model and flexbox CSS grid is two dimensional system.  It simultaneously manages both rows and columns. */
+
+/* ! Grid container and Grid items */
+
+/* ? A grid layout consists of grid container and it's grid items.  */
+/* ? The grid container is an element that contain grid items. It's often and immediate parent element.  */
+/* ? Grid items are the children of the gird containers, and they are  positioned within the grid. */
+
+/* ! Defining the Grid. */
+/* ? To create a grid you first define the columns anf rows. */
+/* ? Use grid template columns nad grid template rows properties to set the size and structure of the grid. */
+/* ? columns and rows can be specified as fixed size(e.g. pixel) or flexible size(e.g. percentage, ram). */
+
+/* ! Grid Lines and Tracks */
+/* ? Grid line are the dividing line between two columns. */
+/* ? Track are the space between the lines where the contain are placed. */
+/* ? You can name gird lines and grid track for better organization. */
+
+/* ! Placing grid items */
+/* ? Grid items are place within the gird by using grid-column and grid-row properties. */
+/* ? You can also shorthand the  grid-column and grid-row property by using grid-area.  */
+
+/* Explicit And Implicit Grid */
+
+/* ! Grid gaps */
+/* ? Grid gaps are the space between the grid items. */
+/* ? You can set the grid gap using the grid-gap property. */
+
+/* ! Grid Auto */
+/* ? Grid items can be automatically placed using grid auto flow. by default they fill the rows , but you can change this behavior to fill columns. */
+
+/* ! Responsive Grid */
+/* ? CSS grid is highly responsive . Grid items can be repositioned and resize automatically as the viewport six=ze changes. */
+/* ? Use media quires to adjust grid layouts of different screen size. */
+
+/* ! Alignment and Justification */
+/* ? You can align and justify content within grid items and grid container. */
+/* ? Properties like justify-items , align-items, justify content and align-content help you to control alignment and spacing. */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1d;
+}
+
+.grid-container {
+  width: 80%;
+  margin: 100px auto;
+  background-color: #dcd7c9;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30p, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  /* GRID */
+
+  display: grid;
+  /* this makes first 3row 150px according to column height */
+  /* grid-template-rows: 150px 150px; */
+  grid-template-rows: repeat(auto, 150px);
+  /* ? If in future we need to add a grid item the grid container create the space for that item.    */
+  grid-auto-rows: 150px;
+
+  /* if we did this the remaining space will be their in blank */
+  /* grid-template-columns: 150px 150px; */
+  /* ? we use  "fr" unit to cover remaining space */
+
+  /* The first column will get 1/6 of the available width.
+The second column will get 3/6 (or 1/2) of the available width.
+The third column will get 2/6 (or 1/3) of the available width. */
+  /* grid-template-columns: 1fr 3fr 2fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* ? min content property take largest word as maximum length od gris item */
+  /* grid-template-columns:1fr min-content repeat( 1, 1fr); */
+  /* ? max content take the whole sentence as the max length of the grid item */
+  /* grid-template-columns:1fr max-content repeat( 1, 1fr); */
+  /* grid-template-columns: 1fr minmax(150px, 1fr) repeat(1, 1fr); */
+  grid-template-columns:repeat(auto-fill,minmax(150px ,1fr)) ;
+
+  /* gap */ 
+  /* 
+row-gap: 50px;
+column-gap: 50px; */
+
+  gap: 50px;
+
+  /* !Align */
+  align-items: center;
+  /* align-items: self-start; */
+  /* align-items: self-end; */
+  align-items: stretch;
+
+  justify-content: stretch;
+
+  /* text position */
+}
+@media(width<600px){
+  .grid-container{
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.item1 {
+  background-color: #a64d79;
+  /* grid-row-start: 2;
+  grid-row-end: 3;
+  ? We can write these two lines in a single line.
+  */
+  /* grid-row: 2/3; */
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+    ? We can write these two lines in a single line.
+ */
+  /* grid-column: 2/3; */
+  /* ? Instead of write ing this in two lines we can able to write this in one line. */
+  /* grid-row-start, grid-colum-start, grid-row-end ,gird-column-end  */
+  /* grid-area: 2/2/3/3; */
+}
+.item2 {
+  background-color: #6a1e55;
+}
+.item3 {
+  background-color: #910a67;
+  /* grid-area: 1/2/2/4;  */
+}
+.item4 {
+  background-color: #720455;
+}
+.item5 {
+  background-color: #3b1c32;
+}
+.item6 {
+  background-color: #3c0753;
+}

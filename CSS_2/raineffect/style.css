@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0 0.4), rgba(0, 0, 0 0.5));
+
+background-image: url("https://i.pinimg.com/originals/8b/18/c0/8b18c00dc934743470c5d0c8cb2a4642.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.rain{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("image/rain.png");
+  animation: rainfall  1s linear infinite;
+}
+
+@keyframes rainfall {
+  0%{
+    background-position: 0% 0%;
+  }
+  100%{
+    background-position: 10% 100%;
+  }
+}

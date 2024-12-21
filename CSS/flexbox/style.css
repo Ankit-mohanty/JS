@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* 
+? main axis is the  primary axis that lies in the define flex direction
+*/
+/* 
+What is flex box?
+/** Flex box is a one dimensional model that helps you to distribute the space along a single axis(either horizontally or vertically) in a flexible and efficient way. It allows you to align and distribute the elements within the container, making it easier to make complex layout without using floats and positioning. 
+*/
+body {
+  display: grid;
+  place-items: center;
+  background-color: hsl(0%, 0%, 95%);
+}
+.main-heading {
+  font-size: 6.2rem;
+  color: brown;
+  margin: 3rem 0;
+}
+
+.flex-container {
+  width: 60%;
+  height: auto;
+padding: 50px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 57px -11px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(
+    to right top,
+    #22477d,
+    #003d5a,
+    #002c34,
+    #051b17,
+    #010201
+  );
+  color: rgb(244, 246, 255);
+
+  /* ? Flex box container or parent properties */
+  display: flex;
+  /* we can set the direction of the flex. */
+  /* flex-direction: column; */
+  /* ? in this property all boxes goes to the right side of the div. */
+  /* flex-direction: column-reverse; */
+  /* ? using this property er can set all the boxes in tha buttom of the div. */
+  /* flex-direction: column-reverse; */
+  /* ? this will make thi flex item in the left side */
+  /* justify-content: flex-start; */
+  /* ? this will make the flex item in the right side. */
+  /* justify-content: flex-end; */
+  /* ? This will make the flex items in the center */
+  /* justify-content: center; */
+  /* ? this will use to make this equal space between the flex items form right and left side. */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+
+  /* align-items: flex-end; */
+  /* Using this we can move the felx item in the buttom of the div. */
+
+  justify-content: center;
+  /* align-items: center; */
+  /* above properties make the flex item in center */
+  gap: 20px;
+  /* this   is use to make gap between the flex items. */
+  /* flex-direction: column; */
+flex: 50px;
+/* ? The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
+flex-wrap: wrap;
+}
+
+.item {
+  width: 70px;
+  /* if we use aspect ratio if we make changes in width according to this tha height will be change */
+  /* aspect-ratio: 1; */
+  height: 70px;
+  font-size: 10px;
+  box-shadow: 0px 0px 57px -11px rgba(0, 0, 0, 0.75);
+  background-image: linear-gradient(
+    to right top,
+    #0c3f8a,
+    #1e3582,
+    #29297a,
+    #321c70,
+    #390b65
+  );
+}
+
+.item2 {
+  /*? The flex-shrink CSS property sets the flex shrink factor of a flex item. If the size of all flex items is larger than the flex container, the flex items can shrink to fit according to their flex-shrink value. Each flex line's negative free space is distributed between the line's flex items that have a flex-shrink value greater than 0. */
+  /* flex-grow: 1; */
+  /* ? % means the 5times more shirnk than other flex items. */
+  /* flex-shrink: 5; */
+}

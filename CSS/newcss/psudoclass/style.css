@@ -1,0 +1,96 @@
+/* ! Important */
+/* ? :is() Pseudo class  (or :matches()) */
+/* * The :is() Pseudo class allows you to select elements that match any of the provide selectors. 
+* It is particularly used when you want to apply same style to multiple selectors without repeating the style. 
+**/
+/* ? :where() Pseudo class */
+/* * The :where() Pseudo class is similar to :is() and allows you to select element that match any of the provided selector.
+* It is typically used when you want to group selectors with applying specific style.
+*/
+
+/* ? :has() Pseudo class */
+/* * The :has() Pseudo class selects element that contain a specific element or a set of elements that match the provided selector. */
+
+/* ? :not() Pseudo class */
+/* * The :not() Pseudo class allows you to select element that do not match the provided selector.
+* It is commonly usee to exclude specific elements form being styled.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+}
+.section-about,
+.section-testimonial {
+  background-color: black;
+
+  label {
+    color: white;
+  }
+}
+
+/* .section-about .grid h1,
+.section-about .grid p,
+.section-testimonial .grid p,
+.section-testimonial .grid h1 {
+  color: azure;
+} */
+
+:is(.section-about,.section-testimonial) .grid {
+  h1{
+    color: azure;
+  }
+  p{
+    color: plum;
+  }
+}
+
+/* ?  parent has attribute("type="checkbox") is the checkbox is checked then make it blue.. */
+.parent:has([type="checkbox"]:checked) label{
+  color: royalblue;
+}
+
+
+/* ? By using accent color we can change the checkbox color */
+input[type="checkbox"]{
+  accent-color: green;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+header {
+  padding: 3.6rem 0;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  font-size: 1rem;
+  list-style: none;
+  border: 1px solid red;
+}
+
+nav ul :not(li:first-child){
+  padding-left: 20px;
+}

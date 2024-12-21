@@ -1,0 +1,93 @@
+/* Transform Origin */
+/* ? the transform origin property in css allows to specifies the point around which transform occur. It determines the origin point for transformation function like rotate, scale, skew and translate. understanding how transform works is crucial for controlling position and behavior of transformed */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vh;
+  aspect-ratio: 1;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: inset 0 0 0 5px violet;
+}
+
+.box {
+  width: 50px;
+  /* height: 100px; */
+  aspect-ratio: 1;
+  background-color: #4861ec;
+  box-shadow: 0 0 0 5px #353f6d;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 2rem;
+  transition-property: all;
+}
+
+.container img {
+  width: 30%;
+  height: auto;
+  transition: all 1s linear;
+}
+
+.container img:hover {
+  /* ? this will move right hand side */
+  /* transform: translateX(200px); */
+
+  /* ? this will move left hand side */
+  /* transform: translateX(-200px); */
+
+  /* ? this will  down side*/
+  /* transform: translateY(200px); */
+
+  /* ? this will move up side */
+  /* transform: translateY(-200px); */
+
+  /* ? New */
+  /* x amd y */
+  /* translate: 500px 200px; */
+
+  /* ? use for zooming effect */
+  /* 2 means 2 times bigger than original size. */
+  /* scale: 0.5; */
+  box-shadow: rgba(254, 249, 242, 20) 0px 50px 100px -20px,
+    rgba(254, 249, 242, 20) 0px 30px 60px -30px,
+    rgba(254, 249, 242, 0.75) 0px -2px 6px 0px inset;
+  /* transform: scaleX(2); */
+
+  /* transform: scaleY(2); */
+  /* transform: rotate(91deg); */
+  /* transform: skewX(45deg); */
+
+  /* rotate: 45deg;
+  transform-origin: left; */
+
+/* translate: 500px 200px; */
+
+/* it moves clock wise. */
+/* rotate: 45deg; */
+
+/* It works one by one. if we wite first property wrong no other property will work. */
+/* transform: translateX(200px) scale(0.5) rotate(54deg); */
+
+translate: 100px;
+scale: .5;
+rotate: 45deg;
+}

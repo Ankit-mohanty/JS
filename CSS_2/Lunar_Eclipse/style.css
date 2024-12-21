@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffe4d6;
+  width: 100vw;
+  height: 100vh;
+  /* display: grid;
+    place-items: center; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.universe {
+  width: 40vw;
+  aspect-ratio: 1;
+  background-color: #ffbb5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  animation: sky-change 10s linear infinite;
+}
+
+@keyframes sky-change {
+  0% {
+    background-color: #ffbb5cb5;
+  }
+25% {
+    background-color: #fcbf49;
+  }
+50% {
+    background-color: #000000;
+  }
+75% {
+    background-color: #fcbf49;
+  }
+100% {
+    background-color: #ffbb5cb5;
+  }
+}
+.sun {
+  width: 18vw;
+  aspect-ratio: 1;
+  background-color: #e25e3e;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    border-radius: inherit;
+    aspect-ratio: 1;
+    background-color: #000;
+    animation: moon_walk 10s ease-in-out infinite  ;
+  }
+}
+
+@keyframes moon_walk {
+  0% {
+    translate: 100%;
+    scale: 1;
+  }
+  50% {
+    translate: 0%;
+    scale: 0.9;
+  }
+  100% {
+    translate: -100%;
+    scale: 0.9;
+  }
+}

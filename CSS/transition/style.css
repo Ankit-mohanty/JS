@@ -1,0 +1,114 @@
+/* Transition CSS */
+
+/* ? transition-property specifies which css property is transitioned. */
+/* example : 
+.element{
+transition-property: color, background-color;
+}
+
+*/
+
+/* ? transition-duration specifies the duration of the transition. */
+/* It accept the values in s amd ms. */
+
+/* ? transition-timing-function: specifies the timing curve for the transition */
+/* ? transition-delay: sets delay before the transition start */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  height: 100vh;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1320px;
+  padding: 64px 0;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 64px;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  text-align: left;
+}
+
+.hero-content p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 20px 0 40px 0;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
+
+a {
+  background-color: transparent;
+  display: inline-block;
+  padding: 12px 32px;
+  text-decoration: none;
+  border-radius: 05px;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 300px;
+  text-align: center;
+
+  /* transition */
+  /* transition-property: width;
+transition-duration: 2s;
+transition-timing-function: ease-in-out;
+transition-delay: 2s;
+*/
+  /* transition: width 2s linear 2s; */
+
+  /* by using this is easy to target multiple properties */
+  /* transition-property: width, color, background-color;
+  transition-duration: 2s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s; */
+
+  transition: all 1s linear 10ms;
+}
+
+.hero-content a:hover {
+  background-color: #fff;
+  color: black;
+  width: 500px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.20) 0px -12px 30px,
+    rgba(255, 255, 255, 0.20) 0px 4px 6px,
+    rgba(255, 255, 255, 0.20) 0px 12px 13px,
+    rgba(255, 255, 255, 0.20) 0px -3px 5px;
+}
+
+
+img{
+  transition: scale 2s ease-in-out 50ms;
+}
+
+.hero-image img:hover{
+  scale: 1.2;
+}

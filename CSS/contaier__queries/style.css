@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+/* ! IMP ! */
+.container {
+    container-type: inline-size;
+    container-name: change;
+}
+
+.container,
+.media {
+  max-width: 500px;
+  height: auto;
+  border: 5px solid yellow;
+margin-right: 200px;
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    align-items: center;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-shadow: -3px 10px 10px rgba(249, 141, 141, 0.2);
+  animation: floating 2s linear infinite alternate;
+}
+
+@container change (width<400px) {
+   .container div {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    color: #ffb000;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+
+}
+@media (width<= 400px) {
+.media div{
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    color: #ffb000;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+}
+
+
+
+

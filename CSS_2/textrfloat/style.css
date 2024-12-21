@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+
+}
+
+h1{
+    font-size: 50px;
+    text-shadow: 5px 5px 5px rgba(223,199,199,0.26);
+    color: aqua;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Bungee Spice", sans-serif;
+    animation: text-shake 2s linear infinite alternate;
+}
+
+@keyframes text-shake {
+    0%{
+        rotate: 30deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: -30deg;
+    }
+}
+
+p{
+    font-size: 20px;
+    position: relative;
+}
+
+p::before{
+    content: "";
+}

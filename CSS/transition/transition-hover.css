@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+CU:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+}
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.box {
+  width: 50px;
+  /* height: 100px; */
+  aspect-ratio: 1;
+  background-color: #4861ec;
+  box-shadow: 0 0 0 5px #353f6d;
+  margin: 15px;
+  display: inline-block;
+  border-radius: 50%;
+  transition: all 2s;
+}
+
+.box:nth-child(1):hover {
+  transition-timing-function: ease;
+  translate: 90vw 0;
+}
+
+.box:nth-child(2):hover {
+  transform: translateX(90vw);
+  transition: 5s ease-in;
+}
+.box:nth-child(3):hover {
+  transform: translateX(90vw);
+  transition: 5s ease-out;
+}
+.box:nth-child(4):hover {
+  transform: translateX(90vw);
+  transition: 5s ease-in-out;
+}
+.box:nth-child(5):hover {
+  transform: translateX(90vw);
+  transition: 5s ease-in;
+}
