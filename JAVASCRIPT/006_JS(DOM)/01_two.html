@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-        <style>
-        .ankit{
-            background-color: black;
-            color: white;
-        }
+    <style>
+      .ankit {
+        background-color: black;
+        color: white;
+      }
     </style>
-    </head>
-    <body class="ankit">
-        
-        <div class="parent">
-            <div class="day">Mon Day</div>
-            <div class="day">Tues Day</div>
-            <div class="day">Wednes Day</div>
-            <div class="day">Thrush Day</div>
-        </div>
-    </body>
-    <script>
-        const days = document.querySelector('.parent');
-        // console.log(days.children[0]);
-        // console.log(days.children[0].innerHTML);
-        // for (let i = 0; i < parent.children.length; i++) {
-        //     const element = parent.children[i].innerHTML;
-        //     console.log(element);
-        // }
-       days.children[0].style.color='orange'
-        console.log(days.firstElementChild);// returns the first child node which is a HTML Element
-        console.log(days.lastElementChild);// return the last child of node which is a HIML element 
-        const dayOne=document.querySelector('.day');
-console.log(dayOne);
-console.log(dayOne.parentElement);
-console.log(dayOne.nextElementSibling);
-console.log("NODES :", days.childNodes);// here it return 9 nide list. Because after the div we press enter node count this as a text node. If we write a comment in it it will count this also.
-    </script>
+  </head>
+  <body class="ankit">
+    <div class="parent">
+      <div class="day">Mon Day</div>
+      <div class="day">Tues Day</div>
+      <div class="day">Wednes Day</div>
+      <div class="day">Thrush Day</div>
+    </div>
+  </body>
+  <script>
+    const days = document.querySelector(".parent");
+    // console.log(days.children[0]);
+    // console.log(days.children[0].innerHTML);
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     const element = parent.children[i].innerHTML;
+    //     console.log(element);
+    // }
+    days.children[0].style.color = "orange";
+    console.log(days.firstElementChild); // returns the first child node which is a HTML Element
+    console.log(days.lastElementChild); // return the last child of node which is a HIML element
+    const dayOne = document.querySelector(".day");
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    console.log(dayOne.nextElementSibling);
+    console.log("NODES :", days.childNodes); // here it return 9 nide list. Because after the div we press enter node count this as a text node. If we write a comment in it it will count this also.
+  </script>
 </html>

@@ -47,3 +47,5 @@ console.log(newDate.toLocaleString("default", {
     year: "numeric",
     day: "numeric"
 }));// here  is a syntax to use the date .
+
+console.log(newDate.toISOString())

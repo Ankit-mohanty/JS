@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="language">
+      <li>JS</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("java");
+    addLanguage("java");
+
+    function optLang(lang) {
+      const list = document.createElement('li')
+      list.appendChild(document.createTextNode(lang))
+      document.querySelector(".language").appendChild(list)
+    }
+    optLang("ank");
+  </script>
+</html>
