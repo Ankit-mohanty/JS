@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </body>
+
+   <script>
+    const start = document.querySelector("#start");
+    const stoped = document.querySelector("#stop");
+
+    let intervalId; // Variable to store setInterval ID
+
+    start.addEventListener("click", () => {
+        if (!intervalId) { // Prevent multiple intervals
+            intervalId = setInterval(() => {
+                console.log("Hitesh", Date.now());
+            }, 2000);
+        }
+    });
+
+    stoped.addEventListener("click", () => {
+        clearInterval(intervalId);
+        intervalId = null; // Reset the interval ID
+    });
+</script> </html>
