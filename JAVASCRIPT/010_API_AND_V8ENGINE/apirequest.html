@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="black">
+    <p>0	UNSENT	Client has been created. open() not called yet.
+        1	OPENED	open() has been called.
+        2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+        3	LOADING	Downloading; responseText holds partial data.
+        4	DONE	The operation is complete.</p>
+</body>
+<script>
+    const url ="https://api.github.com/users/Ankit-mohanty"
+    const xhr=new XMLHttpRequest();
+  // by use open method we can all the request
+  xhr.open('GET',url);
+//   But in this ready state method it is not continuously tracking the request
+//  console.log(xhr.readyState);
+ xhr.onreadystatechange=function() {
+    console.log(xhr.readyState);
+
+    if (xhr.readyState===4) {
+// const data = this.responseText;
+
+// here wew can not use this.responseText because it is a string. So we have to convert it into json object
+const data =JSON.parse (this.responseText);
+console.log("Followers = " + data.followers);// here it comes undefine because it is not a json object. It is a string;
+console.log(typeof data);// string
+
+
+        // console.log(this.responseText);
+        
+    }
+ }
+  // by use send method we can send the request
+  xhr.send();
+</script>
+</html>
