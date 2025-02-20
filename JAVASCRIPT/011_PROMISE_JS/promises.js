@@ -113,6 +113,11 @@ handelPPromise();
 getAllUsers()*/
 
 /* +++++++++ Promise Seven Ex ++++++++ */
+
+// ? fetch is a global method through which we starts a process of fetching data form network, It returns a promise which fulfilled once the response is ther
+
+//! A fetch promise does not reject the HHTP Error(404 e.g) 
+
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((user) => {
     return user.json();
