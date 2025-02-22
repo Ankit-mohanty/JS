@@ -22,11 +22,9 @@ function User(userName, loggedInCount) {
   this.loggedInCount = loggedInCount;
 
   this.greeting = () => {
-    console.log(
-      `Hello ${this.userName} you have logged in ${this.loggedInCount} times`
-    );
+    console.log(`Hello ${this.userName} you have logged in ${this.loggedInCount} times`);
   };
-  // it does not
+  // it does not.
   // return this;
 }
 
