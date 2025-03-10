@@ -1,5 +1,7 @@
 {
   "java.compile.nullAnalysis.mode": "automatic",
   "html.format.enable": false,
-  "cSpell.words": ["Ankit", "MOHANTY", "Rahul", "studioru", "upskill"]
+  "cSpell.words": ["Ankit", "MOHANTY", "Rahul", "studioru", "upskill"],
+  "angular.enable-strict-mode-prompt": false,
+  "git.ignoreLimitWarning": true
 }
